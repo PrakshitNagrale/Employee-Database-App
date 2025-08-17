@@ -103,8 +103,6 @@ public class EmployeeService {
             throw  new DetailsNotUpdateInDBException("Error Deleting employee Details from database!");
         }
 
-        System.out.println("from service "+value);
-
         return EmployeeDTOMapper.convertEmployeeToEmployeeResponseDTO(employee);
     }
 }
